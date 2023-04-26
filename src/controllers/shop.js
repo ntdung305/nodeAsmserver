@@ -29,30 +29,29 @@ const contentEmail = `<div>
 </thead>
 <tbody>
  {result.products.map((value, index) => {
-   return (
-     <tr>
-       <td>
-         <div>
-           <img src={value.product.img} alt="..." width="70" />
-         </div>
-       </td>
-       <td>
-         <div>
-           <div>{value.product.category}</div>
-         </div>
-       </td>
-       <td>
-         <p>{value.product.price} VND</p>
-       </td>
-       <td>{value.quantity}</td>
-       <td>
-         <p>
-           {parseInt(value.product.price) * parseInt(value.quantity)}
-           VND
-         </p>
-       </td>
-     </tr>
-   );
+   return true;
+   //  <tr>
+   //    <td>
+   //      <div>
+   //        <img src={value.product.img} alt="..." width="70" />
+   //      </div>
+   //    </td>
+   //    <td>
+   //      <div>
+   //        <div>{value.product.category}</div>
+   //      </div>
+   //    </td>
+   //    <td>
+   //      <p>{value.product.price} VND</p>
+   //    </td>
+   //    <td>{value.quantity}</td>
+   //    <td>
+   //      <p>
+   //        {parseInt(value.product.price) * parseInt(value.quantity)}
+   //        VND
+   //      </p>
+   //    </td>
+   //  </tr>
  })}
 </tbody>
 </table>

@@ -5,12 +5,13 @@ const bcrypt = require("bcryptjs");
 const session = require("express-session");
 
 exports.home = (req, res, next) => {
-  // console.log(req.session.user);
+  console.log(req.session.user);
   if (req.session.user) {
     res.send({ user: req.session, status: "login" });
   } else {
     res.send({ status: "logout" });
   }
+  // res.send("123");
 };
 
 exports.logout = (req, res) => {
